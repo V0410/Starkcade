@@ -65,7 +65,6 @@ const generateTsAbis = async () => {
 
   const fileContent = Object.entries(allContractsData).reduce(
     (content, [chainId, chainConfig]) => {
-      // Use chainId directly as it is already a hex string
       return `${content}${chainId}:${JSON.stringify(chainConfig, null, 2)},`;
     },
     ""

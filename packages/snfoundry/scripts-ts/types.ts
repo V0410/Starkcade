@@ -14,3 +14,10 @@ export type DeployContractParams = {
   constructorArgs?: RawArgs;
   options?: UniversalDetails;
 };
+
+export type DeployContractResult = {
+  classHash: string;
+  address: string;
+};
+
+export type Contracts = Record<string, DeployContractResult>;
