@@ -77,7 +77,7 @@ export async function getTxVersion(
 
   console.error(
     red(
-      "Error: Unable to find a fee token with sufficient balance. Please fund your wallet first. See https"
+      "Error: Unable to find a fee token with sufficient balance. Please fund your wallet first."
     )
   );
   throw new Error("No fee token with balance found");
@@ -119,8 +119,4 @@ export enum TransactionVersion {
   F1 = "0x100000000000000000000000000000001",
   F2 = "0x100000000000000000000000000000002",
   F3 = "0x100000000000000000000000000000003",
-  F4 = "0x100000000000000000000000000000004",
-  F5 = "0x100000000000000000000000000000005",
-  F6 = "0x100000000000000000000000000000006",
-  F7 = "0x100000000000000000000000000000007",
 }
