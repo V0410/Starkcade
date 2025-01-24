@@ -28,12 +28,7 @@ import { green } from "./helpers/colorize-log";
  * @example (deploy contract without contructorArgs)
  * const deployScript = async (): Promise<void> => {
  *   await deployContract(
- *     {
- *       contract: "YourContract",
- *       contractName: "YourContractExportName",
- *       options: {
- *         maxFee: BigInt(1000000000000)
- *       }
+ *     
  *     }
  *   );
  * };
@@ -44,7 +39,7 @@ import { green } from "./helpers/colorize-log";
 const deployScript = async (): Promise<void> => {
   await deployContract({
     contract: "YourContract",
-    constructorArgs: {
+    constructorArgs: { 
       owner: deployer.address,
     },
   });

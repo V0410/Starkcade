@@ -80,7 +80,7 @@ const declareIfNot_NotWait = async (
         await provider.waitForTransaction(transaction_hash);
       }
     } catch (e) {
-      console.error(red("Error declaring contract:"), e);
+      console.error(red("Error declaring contract:"), e); 
       throw e;
     }
   }
