@@ -1,6 +1,4 @@
 import {
-  CairoContract,
-  CompiledSierra,
   Contract,
   Provider,
   uint256,
@@ -77,7 +75,7 @@ export async function getTxVersion(
 
   console.error(
     red(
-      "Error: Unable to find a fee token with sufficient balance. Please fund your wallet first."
+      "Unable to find a fee token with sufficient balance. Please fund your wallet first."
     )
   );
   throw new Error("No fee token with balance found");
@@ -115,8 +113,4 @@ export enum TransactionVersion {
   V1 = "0x1",
   V2 = "0x2",
   V3 = "0x3",
-  F0 = "0x100000000000000000000000000000000",
-  F1 = "0x100000000000000000000000000000001",
-  F2 = "0x100000000000000000000000000000002",
-  F3 = "0x100000000000000000000000000000003",
 }
